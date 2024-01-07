@@ -35,7 +35,6 @@ body {
   font-size: 20px;
 }
 .search-btn {
-  height: 39px;
   width: 39px;
   margin-left: 8px;
   border-radius: 18px;
@@ -43,7 +42,7 @@ body {
   border: none;
   outline: none;
   background-color: #ffffff33;
-  font-size: large;
+  font-size: 28px;
   color: wheat;
   cursor: pointer;
 }
