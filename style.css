@@ -34,6 +34,8 @@ body {
   font-size: 20px;
 }
 .search-btn {
+  height: 39px;
+  margin-left: 10px;
   width: 39px;
   border-radius: 18px;
   padding-right: 8px;
