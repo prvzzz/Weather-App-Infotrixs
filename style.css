@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  font-size: 120%;
+}
+.card {
+  width: 100%;
+  max-width: 420px;
+  background-color: #000000d0;
+  border-radius: 50px;
+  border: none;
+  color: white;
+  padding: 30px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.input {
+  width: 80%;
+  height: 35px;
+  border-radius: 12px;
+  padding-left: 10px;
+  outline: none;
+  border: none;
+  color: aliceblue;
+  background-color: #ffffff2b;
+  font-size: 20px;
+}
+.search-btn {
+  height: 39px;
+  width: 39px;
+  margin-left: 8px;
+  border-radius: 18px;
+  border: none;
+  outline: none;
+  background-color: #ffffff33;
+  font-size: large;
+  color: wheat;
+  cursor: pointer;
+}
+.input-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-btn:hover {
+  background-color: rgba(169, 162, 162, 0.202);
+}
+.temp {
+  margin: 0px;
+}
+.data-container {
+  padding-left: 12px;
+}
