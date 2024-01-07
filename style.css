@@ -44,8 +44,8 @@ body {
   outline: none;
   background-color: #ffffff33;
   font-size: large;
-  color: wheat;
- 
+  color: wheat:
+  padding-right: 8px;
   cursor: pointer;
 }
 .input-btn-container {
