@@ -1,23 +1,12 @@
-# Use Node base image
-FROM node:18-alpine
+FROM nginx:alpine
 
-# Set working dir
-WORKDIR /app
+# Remove default nginx files
+RUN rm -rf /usr/share/nginx/html/*
 
-# Copy files
-COPY package*.json ./
+# Copy your static app
+COPY . /usr/share/nginx/html
 
-# Install dependencies
-RUN npm install
+# Expose port
+EXPOSE 80
 
-# Copy rest of code
-COPY . .
-
-# Build app (if React/Vite/etc)
-RUN npm run build || true
-
-# Expose port (adjust if needed)
-EXPOSE 3000
-
-# Start app
-CMD ["npm", "start"]
+CMD ["nginx", "-g", "daemon off;"]
